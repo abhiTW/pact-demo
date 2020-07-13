@@ -13,9 +13,9 @@ public class LoadDatabase {
     @Bean
     CommandLineRunner initDatabase(MovieRepository repository) {
         return args -> {
-            log.info("Preloading " + repository.save(new Movie("Inception", "science ficton")));
-            log.info("Preloading " + repository.save(new Movie("Frozon", "fantasy")));
-            log.info("Preloading " + repository.save(new Movie("Batman", "super hero")));
+            log.info("Preloading " + repository.save(new Movie("inception", "science-fiction")));
+//            log.info("Preloading " + repository.save(new Movie("Frozon", "fantasy")));
+//            log.info("Preloading " + repository.save(new Movie("Batman", "super hero")));
         };
     }
 }
